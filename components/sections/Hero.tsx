@@ -3,6 +3,7 @@
 import Button from '@/components/ui/Button';
 import FadeIn from '@/components/animations/FadeIn';
 import { useRouter } from 'next/navigation';
+import logoImage from '../layout/log.png'; // Adjust path as needed
 
 export default function Hero() {
   const router = useRouter();
@@ -12,7 +13,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex items-center justify-center h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/logo.jpg')" }}>
+    <section 
+      className="relative flex items-center justify-center h-screen bg-cover bg-center" 
+      style={{ backgroundImage: `url(${logoImage.src})` }}
+    >
       {/* Darker overlay for better text visibility */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/70"></div>
       
