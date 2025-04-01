@@ -13,12 +13,12 @@ export default function Navbar() {
         <li>
           <Link href="/services" className="hover:text-white transition duration-300">Services</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/products" className="hover:text-white transition duration-300">Products</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link href="/gallery" className="hover:text-white transition duration-300">Gallery</Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/testimonials" className="hover:text-white transition duration-300">Testimonials</Link>
         </li>
